@@ -100,3 +100,22 @@ Any ordinary text entered by a client is sent as a chat message to the other con
 The server uses goroutines to handle incoming RPC connections concurrently. A mutex protects shared user data and message queues to prevent concurrent access from corrupting the server's state.
 
 ## Configuration
+
+The server's default address is:
+
+```text
+:1234
+```
+
+The inactive-user cleanup settings are configured in the server code:
+
+- Cleanup interval: 5 seconds
+- Inactivity timeout: 15 seconds
+
+## Academic Context
+
+Developed as a Distributed Systems assignment to practice RPC communication, TCP networking, concurrency, synchronization, and client-server architecture using Go.
+
+## License
+
+This project was developed for educational purposes.
